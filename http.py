@@ -81,12 +81,12 @@ time.sleep(2)
 def index():
     return '123'
 
-@app.route('/open')
+@app.route('/api/tableCorners/open')
 def hello_world():
     s=run_car()
     return s
 
-@app.route('/close')
+@app.route('/api/tableCorners/close')
 def nihao():
     b = back_car()
     return b
